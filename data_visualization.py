@@ -6,7 +6,6 @@ Este archivo agrupa las funciones utilizadas para realizar la visualización de 
 
 # import
 # intern
-from typing import List
 import warnings
 
 # extern
@@ -79,7 +78,7 @@ def plot_precipitaciones(region: str, start_date: pd.Timestamp, end_date: pd.Tim
 
             plt.show()
 
-def plot_precipitaciones_mensuales(region:str, years:List[int], prep_df: pd.DataFrame):
+def plot_precipitaciones_mensuales(region:str, years:list, prep_df: pd.DataFrame):
     """
     Grafica múltiples series de tiempo mensuales de precipitaciones, donde cada serie de tiempo corresponda a un año
     :param region: región a graficas
@@ -120,7 +119,7 @@ def plot_precipitaciones_mensuales(region:str, years:List[int], prep_df: pd.Data
 
 
 
-def plot_pibs(pib_names: List[str], start_date: pd.Timestamp, end_date: pd.Timestamp, bc_df: pd.DataFrame):
+def plot_pibs(pib_names: list, start_date: pd.Timestamp, end_date: pd.Timestamp, bc_df: pd.DataFrame):
     """
     Permite visualizar dos series históricas de PIB para un rango de fechas determinado
     :param pib_names: lista de PIBs a graficar
